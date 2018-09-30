@@ -1,5 +1,6 @@
-import Vue from 'vue'
-import App from '@/App.vue'
+import Vue from 'vue';
+import App from '@/App.vue';
+import router from '@/router';
 
 //vue resource
 import VueResource from 'vue-resource';
@@ -37,7 +38,7 @@ Vue.use(VeeValidate);
 
 //vue-tables-2
 import {ClientTable} from 'vue-tables-2';
-Vue.use(ClientTable, {}, false,'bootstrap4','default');
+Vue.use(ClientTable, {}, false,'bootstrap3','default');
 //.vue-tables-2
 
 
@@ -102,5 +103,6 @@ new Vue({
   el: '#app',
   render: h => h(App),
   store,
-  i18n
+  i18n,
+  router
 })

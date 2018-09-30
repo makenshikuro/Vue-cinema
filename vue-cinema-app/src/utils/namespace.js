@@ -16,3 +16,4 @@ export default (module, types) =>{
   });
   return newObj;
 }
+
